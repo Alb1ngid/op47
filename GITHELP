@@ -3,4 +3,6 @@ git init - инициализация в гите
 git remote add origin link (ваша ссылка)- привязывает проект и ваш репозитоирий
 
 регулярные команды
-git add
+git add - добавление в репозиторий
+git commit -m 'name' - точка сохранения
+git push origin namebranch - загружает проект в репозиторий
