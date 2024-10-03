@@ -8,3 +8,6 @@ git commit -m 'name' - точка сохранения
 git push origin namebranch - загружает проект в репозиторий
 
 .gitignore/
+git rm --cached namefile (-r)
+
+
