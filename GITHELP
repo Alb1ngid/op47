@@ -7,3 +7,5 @@ git commit -m 'name' - точка сохранения
 git push origin namebranch - загружает проект в репозиторий
 .gitignore/
 git rm --cached namefile (-r)
+
+git clone link(ссылка на репозиторий)-клонирует\скачивает репозиторий
