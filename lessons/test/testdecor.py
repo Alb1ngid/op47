@@ -15,4 +15,3 @@ def time_decorator(func):
 def square(n):
     return n * n
 # print(f'квадрат числа 7:{square(7)}')
-

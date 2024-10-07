@@ -14,12 +14,12 @@ class Bank(object):
     def _validate_age(self,age):
         if age < 18:
             raise ValueError("Возраст должен быть 18+")
-    @property
-    def age(self):
+
+    def get_age(self):
         # print(self._age)
         return self._age
-    @age.setter
-    def age(self, new_age):
+
+    def set_age(self, new_age):
         self._validate_age(new_age)
         self._age=new_age
         print(f'Возраст {self.name} изменен на {self._age} лет')
@@ -36,7 +36,7 @@ class Bank(object):
 
     @balance.deleter
     def balance(self):
-        print('баланс заморожен')
+        print('баланс обнулен')
         del self.__balance
 
 
@@ -55,13 +55,8 @@ beka._age=99
 print(beka)
 # print(dir(beka))
 beka.balance
-beka.balance=99
-beka.balance
+beka.balance=199
 del beka.balance
-beka.balance=9999
-
-beka.age=111
-print(beka)
 # beka._age=199
 # beka.set_age(19)
 # print(beka)
