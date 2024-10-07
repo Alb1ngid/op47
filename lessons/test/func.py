@@ -1,17 +1,5 @@
-import time
-
-# Декоратор для измерения времени выполнения
-def time_decorator(func):
-    def wrapper(*args, **kwargs):
-        start_time = time.time()
-        result = func(*args, **kwargs)
-        end_time = time.time()
-        execution_time = end_time - start_time
-        print(f"Функция '{func.__name__}' выполнена за {execution_time:.4f} секунд")
-        return result
-    return wrapper
-
 # Функция для вычисления факториала
+from  testdecor import time_decorator
 @time_decorator
 def factorial(n):
     if n == 0 or n == 1:
@@ -35,12 +23,10 @@ def fibonacci(n):
         return fibonacci(n - 1) + fibonacci(n - 2)
 
 # Функция для вычисления квадрата числа
-@time_decorator
-def square(n):
-    return n * n
+
 
 # Вызовы функций
 print(f"Факториал 5: {factorial(5)}")
 print(f"Сумма чисел от 1 до 10: {sum_of_numbers(10)}")
-print(f"10-е число Фибоначчи: {fibonacci(2)}")
-print(f"Квадрат числа 7: {square(7)}")
+print(f"2-е число Фибоначчи: {fibonacci(2)}")
+
