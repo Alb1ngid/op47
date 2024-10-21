@@ -1,11 +1,19 @@
 1 раз
 git init - инициализация в гите
 git remote add origin link (ваша ссылка)- привязывает проект и ваш репозитоирий
+
 регулярные команды
 git add - добавление в репозиторий
 git commit -m 'name' - точка сохранения
 git push origin namebranch - загружает проект в репозиторий
 .gitignore/
 git rm --cached namefile (-r)
-
 git clone link(ссылка на репозиторий)-клонирует\скачивает репозиторий
+
+pip freeze
+
+
+
+убивцы - 4
+
+команда2 - 4

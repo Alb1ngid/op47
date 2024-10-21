@@ -1,4 +1,6 @@
 import time
+import drf
+
 # декоратор
 def time_decorator(func):
     def wrapper(*args, **kwargs):

@@ -23,8 +23,6 @@ def fibonacci(n):
         return fibonacci(n - 1) + fibonacci(n - 2)
 
 # Функция для вычисления квадрата числа
-
-
 # Вызовы функций
 print(f"Факториал 5: {factorial(5)}")
 print(f"Сумма чисел от 1 до 10: {sum_of_numbers(10)}")
