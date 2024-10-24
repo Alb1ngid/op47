@@ -40,7 +40,6 @@ with sqlite3.connect('test.db') as connection:
     # FROM gamers JOIN games ON games.user_id = gamers.id
     # ''')
     cursor.execute('''SELECT  gamers.id,gamers.name,games.score FROM gamers,games ''')
-
     # DISTINCT SUM ()
     for row in cursor:
         print(row)

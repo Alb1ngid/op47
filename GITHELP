@@ -10,10 +10,18 @@ git push origin namebranch - загружает проект в репозито
 git rm --cached namefile (-r)
 git clone link(ссылка на репозиторий)-клонирует\скачивает репозиторий
 
+
+python3/py3/py/python -m venv namefile
+
+namefile/Scripts/activate
+source namefile/bin/activate
+
 pip freeze
+pip list
+pip freeze > requairements.txt
+pip install name
 
+git branch
+git branch name
+git checkout name
 
-
-убивцы - 4
-
-команда2 - 4
