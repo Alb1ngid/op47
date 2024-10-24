@@ -5,3 +5,4 @@ __pycache__/
 drf
 komand2
 env
+lessons/test.db
